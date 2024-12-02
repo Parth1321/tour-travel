@@ -1,0 +1,466 @@
+
+@font-face {
+    font-family: merriwea;
+    src: url(./Merriweather-Regular.ttf);
+}body {
+    font-family: gilroy;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+.nav{
+    position: relative;
+    top: 5vh;
+    font-family: pt;
+    position: fixed;
+    font-size: 1.4vw;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    /* background-color:#c67e66; */
+    /* border-bottom: 2px solid red; */
+    /* border-bottom-width: 2px; */
+    /* border-bottom-style: solid; */
+    /* border-image: linear-gradient(to right, red, orange, violet)1; */
+  
+}
+.nav img{
+    height: 24vh;
+    width: 12vw;
+    font-weight: 900;
+    cursor: pointer;
+}
+.nav-part2{
+    display: flex;
+    gap: 3vw;
+}
+.nav h3{
+    cursor: pointer;
+    font-size: 2vw;
+    font-weight: 800;
+    position: relative;
+    left: -21vw;
+    background: linear-gradient(navy, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav h4{
+    cursor: pointer;
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+.nav h4:hover{
+    transform: scale(1.1);
+    /* background-color: rgb(4, 0, 0); */
+    border-radius: 0.5vh;
+    /* color: rgb(248, 244, 244); */
+    box-shadow : 2px 2px  10px rgb(0, 0, 0);
+}
+.nav-part2 h2{
+    cursor: pointer;
+    font-size: 1vw;
+    font-weight: 700;
+}
+.nav i{
+    font-size: 1.4vw;
+    display: none;
+    font-weight: 700;
+}
+#abt{
+    text-decoration: none; /* Removes the underline */
+    color: black;
+  }
+ 
+
+/* General styling for the dropdown container */
+.services-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Initially hide the dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 12px 16px;
+    list-style: none;
+    margin: 0;
+    z-index: 1;
+}
+
+/* Style for the dropdown list items */
+.dropdown-content li {
+    padding: 8px 0;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: medium;
+}
+
+/* Show dropdown on hover */
+.services-dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content li a:hover{
+    /* background-color: red; */
+    border-radius: 10px;
+    padding: 2px 2px;
+}
+
+/* Align the dropdown below the Services h4 */
+.dropdown-content {
+    left: 0;
+    top: 100%;
+    min-width: 160px;
+}
+
+
+
+.page {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.image-placeholder1 {
+    width: 100%;
+    height: 200px;
+    background-image: url(./gwalior.jpg);
+    margin-bottom: 15px;
+    background-position: top;
+    object-fit: cover;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, #fff5)
+
+}
+.image-placeholder2 {
+    width: 100%;
+    height: 200px;
+    background-image: url(./21.khaju.jpg);
+    margin-bottom: 15px;
+    background-position: top;
+    object-fit: cover;
+    background-size: cover;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, #fff5)
+
+}
+.image-placeholder3 {
+    width: 100%;
+    height: 200px;
+    background-image: url(./sanchi.jpg);
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, #fff5)
+
+}
+.image-placeholder4 {
+    width: 100%;
+    height: 200px;
+    background-image: url(./pachmadhi.jpg);
+    margin-bottom: 15px;
+    background-position: center;
+    object-fit: cover;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, #fff5)
+
+}
+.image-placeholder5 {
+    width: 100%;
+    height: 200px;
+    background-image: url(./kanha01.webp);
+    margin-bottom: 15px;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, #fff5)
+
+}
+.image-placeholder6 {
+    width: 100%;
+    height: 200px;
+    background-image: url(./amarkantak.jpg);
+    margin-bottom: 15px;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+.image-placeholder7 {
+    width: 100%;
+    height: 200px;
+    background-image: url(./orcha.jpg);
+    margin-bottom: 15px;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+.image-placeholder8 {
+    width: 100%;
+    height: 200px;
+    background-image: url(./panna.jpg);
+    margin-bottom: 15px;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+.image-placeholder9 {
+    width: 100%;
+    height: 200px;
+    background-image: url(./bhedaghat.webp);
+    margin-bottom: 15px;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+
+.card-content1 h1{
+    font-weight: 800;
+    color: #C1482D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: merriwea;
+}
+.card-content1 p{
+    color: black;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 2px;
+
+}
+.card-content2 h1{
+    font-weight: 800;
+    color: #C2A24B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: merriwea;
+}
+.card-content2 p{
+    color: black;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 2px;
+
+}
+.card-content3 h1{
+    font-weight: 800;
+    color: #797C68;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: merriwea;
+}
+.card-content3 p{
+    color: black;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 2px;
+
+}
+.card-content4 h1{
+    font-weight: 800;
+    color: #228822;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: merriwea;
+}
+.card-content4 p{
+    color: black;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 2px;
+
+}
+.card-content5 h1{
+    font-weight: 800;
+    color: #E4974B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase; font-family: merriwea;
+}
+.card-content5 p{
+    color: black;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 2px;
+}
+.card-content6 h1{
+    font-weight: 800;
+    color: #AB5C47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase; font-family: merriwea;
+}
+.card-content6 p{
+    color: black;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 2px;
+}
+.card-content7 h1{
+    font-weight: 800;
+    color: #5F0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase; font-family: merriwea;
+}
+.card-content7 p{
+    color: black;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 2px;
+}
+.card-content8 h1{
+    font-family: pt;
+    font-weight: 800;
+    color: #5F5C30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase; font-family: merriwea;
+}
+.card-content8 p{
+    color: black;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 2px;
+}
+.card-content9 h1{
+    font-weight: 800;
+    color: #447EAE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase; font-family: merriwea;
+}
+.card-content9 p{
+    color: black;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 2px;
+}
+
+footer{
+    font-family: merriwea;
+}
+#icons{
+    font-weight: 400;
+    font-size: 3vh;
+}
+#icons i:hover{
+    cursor: pointer;
+}
+#liner{
+    display: flex;
+    width: screen;
+    height: 10vh; 
+}
+#liner i{
+    background: linear-gradient(rgba(0, 0, 128, 0.434), rgba(255, 0, 0, 0.522));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 300;
+    font-size: 10vh;  
+    letter-spacing: 1.5vw;
+}
+#headline{
+    padding: 0 4.5vw;
+    height: 10vh;
+    width: screen;
+    /* background-color: red; */
+}
+#headline h5{
+    background: linear-gradient(rgba(255, 217, 0, 0.834), rgba(255, 0, 0, 0.556));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 9vh;
+    text-transform: uppercase;
+    font-family: merriwea;
+    font-weight: 500;
+    letter-spacing: 1.5vw;
+}

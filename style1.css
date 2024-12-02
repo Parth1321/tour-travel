@@ -1,0 +1,228 @@
+@font-face {
+    font-family: merriwea;
+    src: url(./Merriweather-Regular.ttf);
+}
+body {
+    font-family: gilroy;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+    position: relative;
+    top: 5vh;
+    font-family: pt;
+    position: fixed;
+    font-size: 1.4vw;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    z-index: 1000;
+}
+.nav img {
+    height: 5.5vh;
+    width: 3.5vw;
+}
+.nav-part2 {
+    display: flex;
+    gap: 3vw;
+}
+.nav h3 {
+    cursor: pointer;
+    font-size: 1.6vw;
+    font-weight: 700;
+    position: relative;
+    left: -22vw;
+}
+.nav h4 {
+    cursor: pointer;
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+.nav h4:hover {
+    transform: scale(1.1);
+    border-radius: 0.5vh;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+.nav-part2 h2 {
+    cursor: pointer;
+    font-size: 1vw;
+    font-weight: 700;
+}
+.nav i {
+    font-size: 1.4vw;
+    display: none;
+    font-weight: 700;
+}
+
+/* Dropdown */
+.services-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 12px 16px;
+    list-style: none;
+    margin: 0;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 8px 0;
+}
+
+.dropdown-content li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.services-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    border-radius: 10px;
+    padding: 2px 2px;
+}
+
+.page {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.image-placeholder1,
+.image-placeholder2,
+.image-placeholder3,
+.image-placeholder4,
+.image-placeholder5,
+.image-placeholder6,
+.image-placeholder7,
+.image-placeholder8,
+.image-placeholder9 {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.card-content1 h1, .card-content2 h1, .card-content3 h1,
+.card-content4 h1, .card-content5 h1, .card-content6 h1,
+.card-content7 h1, .card-content8 h1, .card-content9 h1 {
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: merriwea;
+}
+
+.card-content1 p, .card-content2 p, .card-content3 p,
+.card-content4 p, .card-content5 p, .card-content6 p,
+.card-content7 p, .card-content8 p, .card-content9 p {
+    color: black;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 2px;
+}
+
+footer {
+    font-family: merriwea;
+}
+
+#icons {
+    font-weight: 400;
+    font-size: 3vh;
+}
+
+/* Media Queries */
+
+/* For tablets and medium screens */
+@media (max-width: 1200px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+
+    .nav h3 {
+        font-size: 2vw;
+        left: -10vw;
+    }
+    
+    .nav h4, .nav i {
+        font-size: 2vw;
+    }
+}
+
+/* For small screens and mobile devices */
+@media (max-width: 768px) {
+    .nav {
+        padding: 0 1vw;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .nav img {
+        height: 8vh;
+        width: 5vw;
+    }
+
+    .nav h3 {
+        font-size: 3vw;
+        left: 0;
+    }
+
+    .nav h4, .nav i {
+        font-size: 3vw;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-content h1 {
+        font-size: 18px;
+    }
+}

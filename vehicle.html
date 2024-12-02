@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarya Tour & Trav</title>
+    <link rel="stylesheet" href="vehicle.css">
+</head>
+<body>
+    <div class="nav">
+        <img src="./AaryaICON-removebg-preview.png" alt="Aarya Tours Logo" class="nav-logo">
+        <div class="nav-part2"> 
+            
+             <a class="nav-link page-scroll" href="./dashboard.html"><h4>Home</h4></a>
+            <a href="./about.html"><h4 id="abt">About Us</h4></a>
+            <a href="./vehicle.html"><h4>Vehicle</h4></a>
+            <div class="services-dropdown">
+                <h4>Services</h4>
+                <ul class="dropdown-content">
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Service 3</a></li>
+                </ul>
+            </div>
+            <a href="./contact.html"><h4>Contact Us</h4></a>
+            <i class="ri-menu-3-line"></i>
+        </div>
+    </div>
+
+    <div class="vehicle-container">
+        <div class="vehicle-box">
+            <img src="images/innova-removebg-preview.png" alt="Vehicle 1" class="vehicle-image">
+            <h1>Toyota innova</h1>
+            <h3>Rs.16 Per KM</h3>
+        </div>
+        <div class="vehicle-box">
+            <img src="images/innova-removebg-preview.png" alt="Vehicle 2" class="vehicle-image">
+            <h1>Toyota innova crysta</h1>
+            <h3>Rs.18 Per KM</h3>
+        </div>
+        <div class="vehicle-box">
+            <img src="images/innova-removebg-preview.png" alt="Vehicle 3" class="vehicle-image">
+            <h1>Toyota Etios</h1>
+            <h3>Rs.12 Per KM</h3>
+        </div>
+        <div class="vehicle-box">
+            <img src="images/innova-removebg-preview.png" alt="Vehicle 4" class="vehicle-image">
+            <h1>Maruti Ertiga</h1>
+            <h3>Rs.14 Per KM</h3>
+        </div>
+        <div class="vehicle-box">
+            <img src="images/innova-removebg-preview.png" alt="Vehicle 5" class="vehicle-image">
+            <h1>Swift Desire</h1>
+            <h3>Rs.13 Per KM</h3>
+        </div>
+        <div class="vehicle-box">
+            <img src="images/traveller-removebg-preview.png" alt="Vehicle 6" class="vehicle-image">
+            <h1>17 Seater Traveller</h1>
+            <h3>Rs.26 Per KM</h3>
+        </div>
+    </div>
+
+    <style>
+        .vehicle-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            position: relative;
+            top: 20vh;
+        }
+
+        .vehicle-box {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .vehicle-box:hover {
+            transform: scale(1.05);
+        }
+
+        .vehicle-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1em;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .vehicle-box {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .vehicle-box {
+                width: 100%;
+            }
+        }
+    </style>
+</body>
+</html>
